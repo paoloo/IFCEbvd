@@ -8,7 +8,7 @@ Caso o browser a ser interagido seja o phantomJS
 
 **$ sudo apt-get install phantomjs**
 
-Senão, mudar a linha 21 para:
+Senão, mudar a linha **21** para:
 
 **b=webdriver.Firefox()**
 
@@ -20,4 +20,4 @@ Para juntar as imagens e montar o PDF, escolha o pacote de seu agrado. No linux,
 
 **$ sudo apt-get install imagemagick**
 
-Outras opções podem ser utilizada, apenas mudando o comando de saida na linha 70 do script.
+Outras opções podem ser utilizada, apenas mudando o comando de saida na linha **71** do script.
