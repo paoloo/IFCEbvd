@@ -3,6 +3,9 @@
 
 Ferramenta de download de livros da biblioteca virtual do IFCE. Baixa página a página como imagem e depois converte para pdf. **É necessário uma matricula válida do IFCE.** 
 
+### sintaxe:
+**$ python ifcebvd.py [matricula] [id do livro]**
+
 ### Dependências
 Caso o browser a ser interagido seja o phantomJS
 
