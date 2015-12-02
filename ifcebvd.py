@@ -74,12 +74,12 @@ def _gerapdf(_livro):
 
 if __name__ == "__main__":
   if len(sys.argv) != 3:
-    print "ifcebvd.py -- IFCE Biblioteca Virtual Downloader  "
-    print "sintaxe: ./ifcebvd.py [matricula] [id do livro]   "
+    print "\033[91mifcebvd.py -- IFCE Biblioteca Virtual Downloader  \033[0m"
+    print "\033[91msintaxe: ./ifcebvd.py [matricula] [id do livro]   \033[0m"
     sys.exit(1)
   else:
     matricula = sys.argv[1]
     livro = sys.argv[2]
     _dump(matricula , livro)
     _gerapdf(livro)
-    print 'operacao finalizada.'
+    print '\033[92moperacao finalizada.\033[0m'
