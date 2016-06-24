@@ -19,7 +19,7 @@ _hash = lambda(_mat): 'login=%s&token=%s' % (_mat, md5.new('%sQJEkJM2iLJiAj6LScx
 
 def _dump(matricula, id_livro):
   b=webdriver.PhantomJS()
-  print 'gerando cookie de login para matricura %s...' % matricula
+  print 'gerando cookie de login para matricula %s...' % matricula
   b.get('http://ifce.bv3.digitalpages.com.br/user_session/authentication_gateway?%s' % _hash(matricula))
   print 'inicializando...'
   b.get('http://ifce.bv3.digitalpages.com.br/users/publications/%s' % id_livro)
