@@ -68,7 +68,7 @@ def _dump(matricula, id_livro):
 def _gerapdf(_livro):
   # usando a ferramenta convert do ImageMagick
   print 'convertendo para PDF...'
-  os.system('convert *.jpg %s.pdf' % livro)
+  os.system('convert *.jpg %s.pdf' % _livro)
   print 'limpando os jpgs residuais...'
   os.system('rm *.jpg')
 
