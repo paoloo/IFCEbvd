@@ -69,6 +69,8 @@ def _gerapdf(_livro):
   # usando a ferramenta convert do ImageMagick
   print 'convertendo para PDF...'
   os.system('convert *.jpg %s.pdf' % _livro)
+
+def _remove():
   print 'limpando os jpgs residuais...'
   os.system('rm *.jpg')
 
@@ -82,4 +84,5 @@ if __name__ == "__main__":
     livro = sys.argv[2]
     _dump(matricula , livro)
     _gerapdf(livro)
+    _remove()
     print '\033[92moperacao finalizada.\033[0m'
